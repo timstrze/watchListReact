@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import AppBar from 'material-ui/AppBar';
-import IconButton from 'material-ui/IconButton';
+
 import FlatButton from 'material-ui/FlatButton';
 
 import Drawer from 'material-ui/Drawer';
@@ -29,7 +29,7 @@ class AppBarExampleComposition extends Component {
                 <AppBar
                     title="React WatchList"
                     iconElementRight={<FlatButton label="Timothy" onTouchTap={this.handleToggle} />}
-                    iconElementLeft={<IconButton><AVEqualizer /></IconButton>}
+                    iconElementLeft={}
                 />
                 <Drawer width={250} openSecondary={true}
                         open={this.state.open} >

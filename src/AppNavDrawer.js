@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Drawer from 'material-ui/Drawer';
 import {List, ListItem, makeSelectable} from 'material-ui/List';
 // import Avatar from 'material-ui/Avatar';
@@ -20,10 +20,10 @@ let SelectableList = makeSelectable(List);
 
 function wrapState(ComposedComponent) {
   return class SelectableList extends Component {
-    static propTypes = {
-      children: PropTypes.node.isRequired,
-      defaultValue: PropTypes.number.isRequired,
-    };
+    // static propTypes = {
+    //   children: PropTypes.node.isRequired,
+    //   defaultValue: PropTypes.number.isRequired,
+    // };
 
     componentWillMount() {
       this.setState({
@@ -71,14 +71,14 @@ const styles = {
 };
 
 class AppNavDrawer extends Component {
-  static propTypes = {
-    docked: PropTypes.bool.isRequired,
-    // location: PropTypes.object.isRequired,
-    // onChangeList: PropTypes.func.isRequired,
-    // onRequestChangeNavDrawer: PropTypes.func.isRequired,
-    open: PropTypes.bool.isRequired,
-    style: PropTypes.object,
-  };
+  // static propTypes = {
+  //   docked: PropTypes.bool.isRequired,
+  //   // location: PropTypes.object.isRequired,
+  //   // onChangeList: PropTypes.func.isRequired,
+  //   // onRequestChangeNavDrawer: PropTypes.func.isRequired,
+  //   open: PropTypes.bool.isRequired,
+  //   style: PropTypes.object,
+  // };
 
   static contextTypes = {
     // muiTheme: PropTypes.object.isRequired,

@@ -33,9 +33,8 @@ class FullWidthSection extends Component {
         margin: '0 auto',
       },
       rootWhenSmall: {
-        paddingTop: desktopGutter * 2.5,
+        paddingTop: desktopGutter * 2.,
         paddingBottom: desktopGutter * 2,
-        paddingLeft: 0,
         paddingRight: 0
 
       },
